@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    *{
+      box-sizing: border-box;
+      font-family:'arial';
+    }
+    .supercontainer{
+      background-color: #f2f2f2;
+      padding-top: 10%;
+      padding-right: 25%;
+      padding-bottom: 10%;
+      padding-left: 25%;
+
+    }
+    .grid-container{
+      display: grid;
+      grid-template-rows: 50% 50%;
+      margin: auto;
+      width: 650px;
+      box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    }
+    .header{
+      background-color: white;
+      border-style: solid;
+      border-color: white;
+      padding: 30px;
+      opacity: 0.7;
+    }
+    .column{
+      font-size: 12px;
+      float: left;
+      padding: 38px;
+   }
+   .footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #fff;
+   }
+  .footer:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    button{
+      background:#99cc00;
+      color: white;
+      padding:10px 60px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 620px) {
+      .grid-container{
+        display: block;
+        box-shadow: none;
+        width: 100%;
+        height: 100%;
+      }
+      .footer{
+        display: block;
+      }
+      .column{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="supercontainer">
+  <div class="grid-container">
+    <div class="header">
+      <h2 style="color:#00e6e6">Join our community</h2>
+      <h3 style="color: #99cc00">
+        30-day, hassle-free money back guarantee
+      </h3>
+      <p style="color: grey;">
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="footer">
+      <div class="column" style="background-color:#00b3b3;">
+        <p style="color: #d9d9d9;"><big>Monthly Subscription</big><br><br>
+
+          <big>&dollar;29</big> per month<br><br>
+
+          Full access for less than &dollar;1 a day</p><br>
+        <button>Sign Up</button>
+      </div>
+      <div class="column" style="background-color:#00cccc;">
+        <p style="color:#d9d9d9;"><big> Why Us</big><br><br>
+          Tutorials by industry experts<br>
+          Peer &amp; expert code review<br>
+          Coding exercises<br>
+          Access to our GitHub repos<br>
+          Community forum<br>
+          Flashcard decks<br>
+          New videos every week<br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Apoorva Rastogi</a>.
+    </p>
+  </footer>
+</body>
+</html>
